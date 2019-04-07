@@ -1,0 +1,8 @@
+import os
+i = 1
+path="./001/"
+for filename in os.listdir(path): 
+    dst =str(i) + ".jpeg"
+    print(filename)
+    os.rename(os.path.join(path,filename),dst) 
+    i += 1
